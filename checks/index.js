@@ -1,11 +1,11 @@
 import fs from "fs/promises";
 import path from "path";
 
-import * as httpdChecks from "./checks/http.js";
-import * as headChecks from "./checks/head.js";
-import * as tcpChecks from "./checks/tcp.js";
-import * as dnsChecks from "./checks/dns.js";
-import * as restimeChecks from "./checks/restime.js";
+import * as httpdChecks from "./modules/http.js";
+import * as headChecks from "./modules/head.js";
+import * as tcpChecks from "./modules/tcp.js";
+import * as dnsChecks from "./modules/dns.js";
+import * as restimeChecks from "./modules/restime.js";
 
 async function main() {
     const raw = await fs.readFile("./setting.json", "utf-8");
