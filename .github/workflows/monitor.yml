@@ -36,13 +36,16 @@ jobs:
 
           # result ブランチを作成/チェックアウト
           git fetch origin result || echo "No result branch yet"
-          git checkout result || git checkout -b result
+          git checkout -B result origin/result || git checkout -b result
 
           # dist 以下を add
           git add dist/result.json
 
-          # コミット
+          # commit
           git commit -m "Update monitor results $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 
+          # リモートの変更を取り込む（rebase）
+          git pull --rebase origin result || echo "No remote changes"
+
           # push
-          git push origin result
+          git push origin result --force-with-lease
