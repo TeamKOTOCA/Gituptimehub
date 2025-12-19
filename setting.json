@@ -1,0 +1,32 @@
+{
+"targets": [
+    {
+    "name": "kotoca-web",
+    "url": "https://kotoca.net",
+    "host": "kotoca.net",
+    "checks": {
+        "http": true,
+        "head": true,
+        "restime": true,
+        "dns": true,
+        "tcp": {
+        "port": 443
+        }
+    }
+    },
+    {
+    "name": "kotoca-api",
+    "url": "https://api.kotoca.net",
+    "host": "api.kotoca.net",
+    "checks": {
+        "http": true,
+        "head": true,
+        "restime": true,
+        "dns": true,
+        "tcp": {
+        "port": 443
+        }
+    }
+    }
+]
+}
