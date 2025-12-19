@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 
 /**
  * Cloudflare Status API を取得（名前の完全一致で単一オブジェクトを返す）
