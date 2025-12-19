@@ -7032,6 +7032,155 @@
           "time": "2025-12-19T21:43:56.231Z"
         }
       ]
+    },
+    {
+      "generatedAt": "2025-12-19T21:51:30.110Z",
+      "results": [
+        {
+          "name": "kotoca-web",
+          "results": {
+            "http": 403,
+            "head": {
+              "ok": false,
+              "statusCode": 403,
+              "timeMs": 37
+            },
+            "restime": {
+              "ok": true,
+              "statusCode": 403,
+              "timeMs": 34
+            },
+            "dns": {
+              "ok": true,
+              "addresses": [
+                "172.67.169.38",
+                "104.21.95.14"
+              ],
+              "timeMs": 0
+            },
+            "tcp": {
+              "ok": true,
+              "timeMs": 2
+            }
+          },
+          "time": "2025-12-19T21:51:27.869Z"
+        },
+        {
+          "name": "kotoca-api",
+          "results": {
+            "http": 200,
+            "head": {
+              "ok": true,
+              "statusCode": 200,
+              "timeMs": 285
+            },
+            "restime": {
+              "ok": true,
+              "statusCode": 200,
+              "timeMs": 247
+            },
+            "dns": {
+              "ok": true,
+              "addresses": [
+                "216.24.57.7",
+                "216.24.57.251"
+              ],
+              "timeMs": 1
+            },
+            "tcp": {
+              "ok": true,
+              "timeMs": 5
+            }
+          },
+          "time": "2025-12-19T21:51:28.173Z"
+        },
+        {
+          "name": "sakura-kotoca",
+          "results": {
+            "http": 403,
+            "head": {
+              "ok": false,
+              "statusCode": 403,
+              "timeMs": 45
+            },
+            "restime": {
+              "ok": true,
+              "statusCode": 403,
+              "timeMs": 35
+            },
+            "dns": {
+              "ok": true,
+              "addresses": [
+                "104.21.95.14",
+                "172.67.169.38"
+              ],
+              "timeMs": 1
+            },
+            "tcp": {
+              "ok": true,
+              "timeMs": 3
+            }
+          },
+          "time": "2025-12-19T21:51:29.536Z"
+        },
+        {
+          "name": "sacra-kotoca",
+          "results": {
+            "http": 403,
+            "head": {
+              "ok": false,
+              "statusCode": 403,
+              "timeMs": 70
+            },
+            "restime": {
+              "ok": true,
+              "statusCode": 403,
+              "timeMs": 41
+            },
+            "dns": {
+              "ok": true,
+              "addresses": [
+                "172.64.80.1"
+              ],
+              "timeMs": 0
+            },
+            "tcp": {
+              "ok": true,
+              "timeMs": 4
+            }
+          },
+          "time": "2025-12-19T21:51:29.694Z"
+        },
+        {
+          "name": "status-kotoca",
+          "results": {
+            "http": 403,
+            "head": {
+              "ok": false,
+              "statusCode": 403,
+              "timeMs": 28
+            },
+            "restime": {
+              "ok": true,
+              "statusCode": 403,
+              "timeMs": 33
+            },
+            "dns": {
+              "ok": true,
+              "addresses": [
+                "104.21.95.14",
+                "172.67.169.38"
+              ],
+              "timeMs": 1
+            },
+            "tcp": {
+              "ok": true,
+              "timeMs": 14
+            }
+          },
+          "time": "2025-12-19T21:51:29.879Z"
+        }
+      ]
     }
   ]
 }
