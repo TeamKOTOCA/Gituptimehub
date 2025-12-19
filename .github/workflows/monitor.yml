@@ -24,39 +24,56 @@ jobs:
         with:
           node-version: 20
 
-      # 1. resultブランチだけを 'result-data' というフォルダにチェックアウトする
+      # 1. resultブランチを 'result-data' フォルダにチェックアウト
       - name: Checkout result branch
         uses: actions/checkout@v4
         with:
           ref: result
-          path: result # 別フォルダに置く
-        continue-on-error: true # 初回などでブランチがない場合に備える
+          path: result-data
+        continue-on-error: true # 初回実行時などでブランチがない場合を考慮
 
-      # 2. 監視スクリプト実行 (出力先を result-data/ にする)
-      # スクリプト内で ../result-data/result.json 等を読み書きするようにするか、
-      # ここでファイルをコピーして渡します。
+      # 2. 過去のデータをスクリプトが読み込む場所に配置して実行
       - name: Run monitor
         run: |
-          # result-data から前回の結果をコピー (もしあれば)
-          [ -d result-data ] && cp -r result-data/* result/ || echo "No previous results"
+          # フォルダ作成
+          mkdir -p result
           
-          # スクリプト実行 (result/ 配下に新しいファイルが生成される)
+          # [重要] 過去の履歴(result-data/result.json)があれば、
+          # スクリプトが読み込む場所(result/result.json)にコピーする
+          if [ -f result-data/result.json ]; then
+            cp result-data/result.json result/result.json
+            echo "Previous history loaded."
+          else
+            echo "No previous history found. Starting new."
+          fi
+          
+          # スクリプト実行 (result/result.json を読み込み、追記して保存する)
           node checks/index.js
 
-      # 3. result/ の中身を result-data/ に戻して push する
+      # 3. 更新されたファイルを result-data フォルダに同期して Push
       - name: Commit & Push result
         run: |
-          # result-data フォルダへ移動
-          cd result-data || (mkdir result-data && cd result-data && git init && git checkout -b result)
+          # result-data フォルダが存在しない（初回）場合は作成して初期化
+          if [ ! -d "result-data" ]; then
+            mkdir result-data
+            cd result-data
+            git init
+            git checkout -b result
+            cd ..
+          fi
+
+          # 最新の結果を保存用フォルダへコピー
+          cp -r result/* result-data/
           
+          cd result-data
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # mainのresultフォルダからファイルをコピーしてくる
-          cp -r ../result/* .
-
           git add .
-          git commit -m "Update monitor results $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-          
-          # 認証設定（actions/checkout を使っているので自動で入りますが、念のため）
-          git push origin result
+          # 変更がある場合のみコミット
+          if ! git diff --cached --exit-code --quiet; then
+            git commit -m "Update monitor results $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin result
+          else
+            echo "No changes to commit"
+          fi
