@@ -24,22 +24,17 @@ jobs:
         with:
           node-version: 20
 
-      # 1. resultブランチを 'result-data' フォルダにチェックアウト
       - name: Checkout result branch
         uses: actions/checkout@v4
         with:
           ref: result
           path: result-data
-        continue-on-error: true # 初回実行時などでブランチがない場合を考慮
+        continue-on-error: true
 
-      # 2. 過去のデータをスクリプトが読み込む場所に配置して実行
       - name: Run monitor
         run: |
-          # フォルダ作成
           mkdir -p result
           
-          # [重要] 過去の履歴(result-data/result.json)があれば、
-          # スクリプトが読み込む場所(result/result.json)にコピーする
           if [ -f result-data/result.json ]; then
             cp result-data/result.json result/result.json
             echo "Previous history loaded."
@@ -47,13 +42,10 @@ jobs:
             echo "No previous history found. Starting new."
           fi
           
-          # スクリプト実行 (result/result.json を読み込み、追記して保存する)
           node checks/index.js
 
-      # 3. 更新されたファイルを result-data フォルダに同期して Push
       - name: Commit & Push result
         run: |
-          # result-data フォルダが存在しない（初回）場合は作成して初期化
           if [ ! -d "result-data" ]; then
             mkdir result-data
             cd result-data
@@ -62,7 +54,6 @@ jobs:
             cd ..
           fi
 
-          # 最新の結果を保存用フォルダへコピー
           cp -r result/* result-data/
           
           cd result-data
@@ -70,7 +61,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add .
-          # 変更がある場合のみコミット
           if ! git diff --cached --exit-code --quiet; then
             git commit -m "Update monitor results $(date +'%Y-%m-%d %H:%M:%S')"
             git push origin result

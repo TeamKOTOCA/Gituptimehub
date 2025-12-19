@@ -1,74 +1,76 @@
 {
+    "meta": {
+        "title": "KOTOCA status",
+        "logo": "https://kotoca.net/KOTOCA(1).webp",
+        "color": {
+            "theme": "#feeeee",
+            "sub": "#feeeee",
+            "font": "#feeeee"
+        },
+        "footer_links": [
+            {
+                "label": "Website",
+                "url": "https://kotoca.net"
+            },
+            {
+                "label": "contact",
+                "url": "mailto:contact@kotoca.net"
+            }
+        ]
+    },
+    "categories": [
+        {
+            "id": "kotoca_services",
+            "label": "内部サービス"
+        },
+        {
+            "id": "extras",
+            "label": "依存先サービス"
+        }
+    ],
     "targets": [
         {
-        "name": "kotoca-web",
-        "url": "https://kotoca.net",
-        "host": "kotoca.net",
-        "checks": {
-            "http": true,
-            "head": true,
-            "restime": true,
-            "dns": true,
-            "tcp": {
-            "port": 443
-            }
-        }
+            "label": "kotoca公式サイト",
+            "category": "kotoca_services",
+            "type": "self",
+            "meta": {
+                "url": "https://kotoca.net",
+                "host": "kotoca.net",
+
+                    "http": true,
+                    "head": true,
+                    "restime": true,
+                    "dns": true,
+                    "tcp": {
+                    "port": 443
+                    }
+                }
         },
         {
-        "name": "kotoca-api",
-        "url": "https://api.kotoca.net",
-        "host": "api.kotoca.net",
-        "checks": {
-            "http": true,
-            "head": true,
-            "restime": true,
-            "dns": true,
-            "tcp": {
-            "port": 443
+            "label": "kotocaAPI",
+            "category": "kotoca_services",
+            "type": "self",
+            "meta": {
+                "url": "https://api.kotoca.net",
+                "host": "api.kotoca.net",
+
+                "http": true,
+                "head": true,
+                "restime": true,
+                "dns": true,
+                "tcp": {
+                "port": 443
+                }
             }
-        }
         },
         {
-        "name": "sakura-kotoca",
-        "url": "https://sakura.kotoca.net",
-        "host": "sakura.kotoca.net",
-        "checks": {
-            "http": true,
-            "head": true,
-            "restime": true,
-            "dns": true,
-            "tcp": {
-            "port": 443
+            "label": "cloudflare workers",
+            "category": "extras",
+            "type": "provider",
+            "meta": {
+                "provider": "gcp",
+                "service": "dns"
             }
-        }
-        },
-        {
-        "name": "sacra-kotoca",
-        "url": "https://sacra.kotoca.net",
-        "host": "sacra.kotoca.net",
-        "checks": {
-            "http": true,
-            "head": true,
-            "restime": true,
-            "dns": true,
-            "tcp": {
-            "port": 443
-            }
-        }
-        },
-        {
-        "name": "status-kotoca",
-        "url": "https://status.kotoca.net",
-        "host": "status.kotoca.net",
-        "checks": {
-            "http": true,
-            "head": true,
-            "restime": true,
-            "dns": true,
-            "tcp": {
-            "port": 443
-            }
-        }
         }
     ]
 }
