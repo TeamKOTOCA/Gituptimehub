@@ -34,18 +34,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # result ブランチを作成/チェックアウト
+          # result ブランチを作成/チェックアウト（ローカルは main から）
           git fetch origin result || echo "No result branch yet"
           git checkout -B result origin/result || git checkout -b result
 
-          # dist 以下を add
+          # dist/result.json のみ追加
           git add dist/result.json
 
           # commit
           git commit -m "Update monitor results $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 
-          # リモートの変更を取り込む（rebase）
+          # リモートの result ブランチの変更を取り込む（rebase）
           git pull --rebase origin result || echo "No remote changes"
 
-          # push
+          # push（dist/result.json のみ反映）
           git push origin result --force-with-lease
