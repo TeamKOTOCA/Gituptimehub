@@ -1,5 +1,5 @@
 
-export async function getStatus(service, region = "global") {
+export async function getStatus(service) {
     const url = "https://status.cloud.google.com/incidents.json";
 
     try {

@@ -71,6 +71,15 @@
                 "provider": "cloudflare",
                 "service": "workers"
             }
+        },
+        {
+            "label": "GCP",
+            "category": "extras",
+            "type": "provider",
+            "meta": {
+                "provider": "gcp",
+                "service": "dns"
+            }
         }
     ]
 }
