@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2025-12-20T02:38:15.712Z",
+  "results": [
+    {
+      "label": "kotoca公式サイト",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "http": 403,
+        "head": {
+          "ok": false,
+          "statusCode": 403,
+          "timeMs": 53
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 403,
+          "timeMs": 38
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "104.21.95.14",
+            "172.67.169.38"
+          ],
+          "timeMs": 1
+        }
+      },
+      "time": "2025-12-20T02:38:14.450Z"
+    },
+    {
+      "label": "kotocaAPI",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "http": 200,
+        "head": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 277
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 268
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "216.24.57.251",
+            "216.24.57.7"
+          ],
+          "timeMs": 0
+        }
+      },
+      "time": "2025-12-20T02:38:15.417Z"
+    },
+    {
+      "label": "cloudflare workers",
+      "category": "extras",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "cloudflare",
+        "status": {
+          "name": "Workers",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-20T02:38:15.711Z"
+    }
+  ]
+}
