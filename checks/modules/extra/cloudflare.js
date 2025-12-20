@@ -1,9 +1,3 @@
-
-/**
- * Cloudflare Status API を取得（名前の完全一致で単一オブジェクトを返す）
- * @param {string} serviceName 完全一致させるサービス名 (例: "Cloudflare Workers", "Tokyo, Japan - (NRT)")
- * @returns {Promise<{ name: string, rawStatus: string, normalizedStatus: string } | null>}
- */
 export async function getStatus(serviceName) {
     if (!serviceName) return null;
 

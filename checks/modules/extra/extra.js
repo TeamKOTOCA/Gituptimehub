@@ -1,9 +1,6 @@
 const PROVIDERS = {
     cloudflare: async () => import("./cloudflare.js"),
-    aws: async () => import("./aws.js"),
-    gcp: async () => import("./gcp.js"),
     github: async () => import("./github.js"),
-    render: async () => import("./render.js"),
 };
 
 export async function getServiceStatus({ provider, service }) {

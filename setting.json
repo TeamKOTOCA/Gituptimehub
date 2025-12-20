@@ -73,12 +73,12 @@
             }
         },
         {
-            "label": "GCP",
+            "label": "GitHub",
             "category": "extras",
             "type": "provider",
             "meta": {
-                "provider": "gcp",
-                "service": "dns"
+                "provider": "github",
+                "service": "action"
             }
         }
     ]
