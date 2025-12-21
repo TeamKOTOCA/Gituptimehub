@@ -1,0 +1,171 @@
+{
+  "generatedAt": "2025-12-21T17:30:58.015Z",
+  "results": [
+    {
+      "label": "kotoca公式サイト",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "http": 403,
+        "head": {
+          "ok": false,
+          "statusCode": 403,
+          "timeMs": 50
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 403,
+          "timeMs": 38
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "104.21.95.14",
+            "172.67.169.38"
+          ],
+          "timeMs": 0
+        }
+      },
+      "time": "2025-12-21T17:30:54.988Z"
+    },
+    {
+      "label": "kotocaAPI",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "http": 200,
+        "head": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 280
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 264
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "216.24.57.7",
+            "216.24.57.251"
+          ],
+          "timeMs": 0
+        }
+      },
+      "time": "2025-12-21T17:30:55.989Z"
+    },
+    {
+      "label": "GitHub Actions",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "github",
+        "status": {
+          "name": "Actions",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-21T17:30:56.185Z"
+    },
+    {
+      "label": "Render Dashboard",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "render",
+        "status": {
+          "name": "Render Dashboard",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-21T17:30:56.524Z"
+    },
+    {
+      "label": "Cloudflare Workers",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "cloudflare",
+        "status": {
+          "name": "Workers",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-21T17:30:56.741Z"
+    },
+    {
+      "label": "Dropbox",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "dropbox",
+        "status": {
+          "name": "Website",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-21T17:30:56.932Z"
+    },
+    {
+      "label": "Notion",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "notion",
+        "status": {
+          "name": "Notion API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-21T17:30:57.297Z"
+    },
+    {
+      "label": "OpenAI",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "openai",
+        "status": {
+          "name": "Compliance API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-21T17:30:57.625Z"
+    },
+    {
+      "label": "discord",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "discord",
+        "status": {
+          "name": "API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-21T17:30:57.785Z"
+    },
+    {
+      "label": "x",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "x",
+        "status": {
+          "name": "GNIP Enterprise API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-21T17:30:58.014Z"
+    }
+  ]
+}
