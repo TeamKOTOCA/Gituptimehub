@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  monitor:
+  check:
     runs-on: ubuntu-latest
 
     steps:
@@ -69,12 +69,18 @@ jobs:
           fi
 
   deploy:
-    needs: monitor
+    needs: check
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
+      
+      - name: Checkout result
+        uses: actions/checkout@v4
+        with:
+          ref: result
+          path: result
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
