@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #1a1a1a;
+    --bg-color: #ffffff;
 }
 
 body,html{
@@ -8,14 +8,14 @@ body,html{
     background-color: var(--bg-color);
 }
 h1,h2,h3,p,a{
-    color: #ffffff;
+    color: #2c2c2c;
 }
 
 header{
     height: 50vh;
     margin: 0;
     background-image:
-        linear-gradient(#1a1a1a2a, #1a1a1ac5),
+        linear-gradient(#ffffff2a, #ffffffc5),
         url("https://kotoca.net/KOTOCA.webp");
     background-position: center;
     background-size: cover;
@@ -37,13 +37,30 @@ header h1{
     text-align: center;
 }
 #top_status{
-    background-color: #159740;
     padding: 20px;
     border-radius: 5px;
+}
+.top_status_up{
+    background-color: #159740;
+}
+.top_status_warn{
+    background-color: #bb9f00;
+}
+.top_status_down{
+    background-color: #b61e1e;
 }
 #top_status p{
     margin: 0;
     color: #fff;
+}
+.to_top_link{
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.to_top_link:hover{
+    background-color: #2c2c2c22;
 }
 
 main{
@@ -90,8 +107,8 @@ main{
 .se_content{
     margin: 10px;
     padding: 10px;
-    border-radius: 10px;
-    border: solid 1px #ffffff;
+    border-radius: 5px;
+    box-shadow: #2c2c2c22 0px 0px 10px;
 }
 .se_content h3{
     margin: 0 0 10px 0;
@@ -101,6 +118,7 @@ main{
     width: 100%;
     overflow-x: scroll;
     scrollbar-width: thin;
+    justify-content: end;
 }
 .se_a{
     width: 5px;
@@ -119,8 +137,49 @@ main{
     background-color: #971515;
 }
 
+#pastincident_div a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#pastincident_div a h3, #pastincident_div a p{
+    margin: 0;
+    color: #2c2c2c;
+}
+.past_incident_error{
+    border: #aa0000 solid 2px;
+    border-left: #aa0000 solid 5px;
+}
+.past_incident_error:hover{
+    background-color: #e6010130;
+}
+.past_incident_warn{
+    border: #8f8300 solid 2px;
+    border-left: #8f8300 solid 5px;
+}
+.past_incident_warn:hover{
+    background-color: #dfbe0530;
+}
+.past_incident_info{
+    border: #108ec9 solid 2px;
+    border-left: #0275aa solid 5px;
+}
+.past_incident_info:hover{
+    background-color: #0a9add30;
+}
+
+footer p {
+    text-align: center;
+}
+
 body.scrolled{
     padding-top: 300px;
+}
+body.scrolled.incidents_body{
+    padding-top: 50px;
 }
 body.scrolled header{
     height: 60px;
@@ -134,8 +193,8 @@ body.scrolled header{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color: #1a1a1a;
-    box-shadow: #ffffff22 0px 0px 10px;
+    background-color: #ffffff;
+    box-shadow: #2c2c2c22 0px 0px 10px;
 }
 body.scrolled header img{
     display: block;
