@@ -4,11 +4,6 @@
         "logo": "https://kotoca.net/KOTOCA.webp",
         "favicon": "https://kotoca.net/KOTOCA.webp",
         "theme": "dark",
-        "color": {
-            "theme": "#feeeee",
-            "sub": "#feeeee",
-            "font": "#feeeee"
-        },
         "footer_links": [
             {
                 "label": "Website",

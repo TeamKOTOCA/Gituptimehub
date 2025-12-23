@@ -2,6 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import matter from 'gray-matter'; 
 import { marked } from 'marked';
+import { generateServicesHTML } from './genService.js';
 
 // パス設定
 const SRC_DIR = path.resolve('./src');
@@ -138,8 +139,13 @@ async function copyAndReplace() {
             if (file === 'index.html') {
                 const incidentsHTML = await generateIncidentsHTML();
                 content = content.replace(
-                    /<div id="incidents_div">[\s\S]*?<\/div>/,
-                    `<div id="incidents">\n${incidentsHTML}\n</div>`
+                    /<div id="incidents_div"><\/div>/,
+                    `<div id="incidents_div">\n${incidentsHTML}\n</div>`
+                );
+                const servicesHTML = await generateServicesHTML();
+                content = content.replace(
+                    /<div id="services_div"><\/div>/,
+                    `<div id="services_div">\n${servicesHTML}\n</div>`
                 );
             }
 
