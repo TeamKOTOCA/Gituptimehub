@@ -72,7 +72,7 @@ export async function generateServicesHTML() {
   <h3>${label}</h3>
   <div class="se_div">
     ${history
-        .slice(-9) // 表示数制限（必要なければ削除）
+        .slice(-50) // 表示数制限（必要なければ削除）
         .map(s => `<div class="se_a ${statusClass(s)}"></div>`)
         .join("\n")}
   </div>
