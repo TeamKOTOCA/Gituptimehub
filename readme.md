@@ -1,11 +1,11 @@
 # GitUptimeHub
-![GitHub License](https://img.shields.io/github/license/TeamKOTOCA/GitUptimeHub)
+<p align="center">
+  <img src="https://img.shields.io/github/license/TeamKOTOCA/GitUptimeHub" alt="License">
+  <img src="https://img.shields.io/github/stars/TeamKOTOCA/GitUptimeHub" alt="Stars">
+  <img src="https://img.shields.io/github/forks/TeamKOTOCA/GitUptimeHub" alt="Forks">
+  <img src="https://img.shields.io/github/issues/TeamKOTOCA/GitUptimeHub" alt="Issues">
+</p>
 
-![GitHub Repo stars](https://img.shields.io/github/stars/TeamKOTOCA/GitUptimeHub)
-
-![GitHub forks](https://img.shields.io/github/forks/TeamKOTOCA/GitUptimeHub)
-
-![GitHub issues](https://img.shields.io/github/issues/TeamKOTOCA/GitUptimeHub)
 
 GitHub Actions を利用した **セルフホスト型の監視システム**です。
 類似ソフトのupptimeの仕組みを参考にしつつ、より軽量で柔軟な構成を目的として実装されています。
