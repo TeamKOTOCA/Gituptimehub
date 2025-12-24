@@ -10,6 +10,7 @@ GituptimehubはGitHub Actions を利用したセルフホスト型の監視シ�
 類似ソフトの[upptime](https://upptime.js.org/)の仕組みを参考にしつつ、より軽量で柔軟な構成を目的として実装されています。
 GitHub Actions上で定期的に疎通確認を行い、その結果をGitHub上に記録・可視化することで外部の監視サービスに依存せず、GitHub だけで完結する、障害に強い構成となっています。
 (GitHub関連のサービスにのみ依存します。)
+
 ## 特徴
 * GitHub Actions のみで動作（常駐サーバー不要）
 * HTTP / HTTPS エンドポイントの疎通監視
@@ -17,6 +18,7 @@ GitHub Actions上で定期的に疎通確認を行い、その結果をGitHub上
 * 様々なStatusAPIに対応
 * GitHub 上に履歴を保存・管理
 * upptime より構成が単純で、改造しやすい(setting.jsonを編集するためのページがあります)
+
 ## 仕組み概要
 1. GitHub Actions が cron で起動
 2. 指定されたエンドポイントにリクエストを送信又は各サービスのstatusAPIを叩く
