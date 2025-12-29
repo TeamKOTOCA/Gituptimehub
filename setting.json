@@ -1,9 +1,9 @@
 {
-    "meta": {
+    "common": {
         "title": "KOTOCA",
         "logo": "https://kotoca.net/KOTOCA.webp",
         "favicon": "https://kotoca.net/KOTOCA.webp",
-        "theme": "light"
+        "theme": "dark"
     },
     "categories": [
         {
