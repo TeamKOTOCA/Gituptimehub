@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2025-12-30T16:57:54.355Z",
+  "results": [
+    {
+      "label": "kotoca公式サイト",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "head": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 227
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 6
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "185.199.109.153",
+            "185.199.108.153",
+            "185.199.111.153",
+            "185.199.110.153"
+          ],
+          "timeMs": 0
+        },
+        "tcp": {
+          "ok": true,
+          "timeMs": 111
+        }
+      },
+      "time": "2025-12-30T16:57:51.937Z"
+    },
+    {
+      "label": "kotocaAPI",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "head": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 329
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 265
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "216.24.57.251",
+            "216.24.57.7"
+          ],
+          "timeMs": 1
+        },
+        "tcp": {
+          "ok": true,
+          "timeMs": 6
+        }
+      },
+      "time": "2025-12-30T16:57:52.539Z"
+    },
+    {
+      "label": "GitHub Actions",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "github",
+        "status": {
+          "name": "Actions",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T16:57:52.844Z"
+    },
+    {
+      "label": "Render Dashboard",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "render",
+        "status": {
+          "name": "Render Dashboard",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T16:57:53.219Z"
+    },
+    {
+      "label": "Cloudflare Workers",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "cloudflare",
+        "status": {
+          "name": "Workers",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T16:57:53.387Z"
+    },
+    {
+      "label": "Dropbox",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "dropbox",
+        "status": {
+          "name": "Website",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T16:57:53.541Z"
+    },
+    {
+      "label": "Notion",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "notion",
+        "status": {
+          "name": "Notion API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T16:57:53.787Z"
+    },
+    {
+      "label": "OpenAI",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "openai",
+        "status": {
+          "name": "Compliance API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T16:57:54.006Z"
+    },
+    {
+      "label": "discord",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "discord",
+        "status": {
+          "name": "API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T16:57:54.238Z"
+    },
+    {
+      "label": "x",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "x",
+        "status": {
+          "name": "GNIP Enterprise API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T16:57:54.354Z"
+    }
+  ]
+}
