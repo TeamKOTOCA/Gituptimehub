@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2025-12-30T05:55:57.198Z",
+  "results": [
+    {
+      "label": "kotoca公式サイト",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "head": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 222
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 5
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "185.199.109.153",
+            "185.199.111.153",
+            "185.199.108.153",
+            "185.199.110.153"
+          ],
+          "timeMs": 0
+        },
+        "tcp": {
+          "ok": true,
+          "timeMs": 47
+        }
+      },
+      "time": "2025-12-30T05:55:54.507Z"
+    },
+    {
+      "label": "kotocaAPI",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "head": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 384
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 281
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "216.24.57.251",
+            "216.24.57.7"
+          ],
+          "timeMs": 1
+        },
+        "tcp": {
+          "ok": true,
+          "timeMs": 28
+        }
+      },
+      "time": "2025-12-30T05:55:55.201Z"
+    },
+    {
+      "label": "GitHub Actions",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "github",
+        "status": {
+          "name": "Actions",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T05:55:55.420Z"
+    },
+    {
+      "label": "Render Dashboard",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "render",
+        "status": {
+          "name": "Render Dashboard",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T05:55:55.701Z"
+    },
+    {
+      "label": "Cloudflare Workers",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "cloudflare",
+        "status": {
+          "name": "Workers",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T05:55:55.929Z"
+    },
+    {
+      "label": "Dropbox",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "dropbox",
+        "status": {
+          "name": "Website",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T05:55:56.096Z"
+    },
+    {
+      "label": "Notion",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "notion",
+        "status": {
+          "name": "Notion API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T05:55:56.429Z"
+    },
+    {
+      "label": "OpenAI",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "openai",
+        "status": {
+          "name": "Compliance API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T05:55:56.642Z"
+    },
+    {
+      "label": "discord",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "discord",
+        "status": {
+          "name": "API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T05:55:56.928Z"
+    },
+    {
+      "label": "x",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "x",
+        "status": {
+          "name": "GNIP Enterprise API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T05:55:57.197Z"
+    }
+  ]
+}
