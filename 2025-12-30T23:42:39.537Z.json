@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2025-12-30T23:42:39.537Z",
+  "results": [
+    {
+      "label": "kotoca公式サイト",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "head": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 259
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 11
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "185.199.110.153",
+            "185.199.111.153",
+            "185.199.109.153",
+            "185.199.108.153"
+          ],
+          "timeMs": 0
+        },
+        "tcp": {
+          "ok": true,
+          "timeMs": 60
+        }
+      },
+      "time": "2025-12-30T23:42:35.635Z"
+    },
+    {
+      "label": "kotocaAPI",
+      "category": "kotoca_services",
+      "type": "self",
+      "results": {
+        "head": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 356
+        },
+        "restime": {
+          "ok": true,
+          "statusCode": 200,
+          "timeMs": 596
+        },
+        "dns": {
+          "ok": true,
+          "addresses": [
+            "216.24.57.251",
+            "216.24.57.7"
+          ],
+          "timeMs": 1
+        },
+        "tcp": {
+          "ok": true,
+          "timeMs": 22
+        }
+      },
+      "time": "2025-12-30T23:42:36.611Z"
+    },
+    {
+      "label": "GitHub Actions",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "github",
+        "status": {
+          "name": "Actions",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T23:42:37.025Z"
+    },
+    {
+      "label": "Render Dashboard",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "render",
+        "status": {
+          "name": "Render Dashboard",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T23:42:37.409Z"
+    },
+    {
+      "label": "Cloudflare Workers",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "cloudflare",
+        "status": {
+          "name": "Workers",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T23:42:37.677Z"
+    },
+    {
+      "label": "Dropbox",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "dropbox",
+        "status": {
+          "name": "Website",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T23:42:37.760Z"
+    },
+    {
+      "label": "Notion",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "notion",
+        "status": {
+          "name": "Notion API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T23:42:38.118Z"
+    },
+    {
+      "label": "OpenAI",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "openai",
+        "status": {
+          "name": "Compliance API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T23:42:38.445Z"
+    },
+    {
+      "label": "discord",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "discord",
+        "status": {
+          "name": "API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T23:42:38.761Z"
+    },
+    {
+      "label": "x",
+      "category": "core",
+      "type": "provider",
+      "results": {
+        "ok": true,
+        "provider": "x",
+        "status": {
+          "name": "GNIP Enterprise API",
+          "normalizedStatus": "operational"
+        }
+      },
+      "time": "2025-12-30T23:42:39.537Z"
+    }
+  ]
+}
