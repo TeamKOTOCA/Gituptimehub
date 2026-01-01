@@ -1,4 +1,4 @@
-## [Step2はこちら](https://gituptimehub.kotoca.net/)
+## [Step2はこちら](https://gituptimehub.kotoca.net/app)
 
 # Gituptimehub
 <p align="center">
