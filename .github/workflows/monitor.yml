@@ -53,20 +53,23 @@ jobs:
         run: |
           git config user.name "GitupdatehubBot"
           git config user.email "gitupdatehubbot@users.noreply.github.com"
-      
-          # result ブランチが存在するか確認してなければ作る
+          
+          # result ブランチが存在するか確認
           if git ls-remote --exit-code --heads origin result; then
             echo "result branch exists. Checking out."
             git checkout -B result origin/result
           else
-            echo "result branch does not exist. Creating..."
-            git checkout -B result
+            echo "result branch does not exist. Creating new branch..."
+            git checkout --orphan result  # 完全新規ブランチ
+            git rm -rf .                 # 空にする
+            git commit --allow-empty -m "Initial commit for result branch"
+            git push origin HEAD:result
           fi
-      
-          # result ディレクトリを反映
+          
+          # result ディレクトリをコピー
           mkdir -p result-data
           cp -r result/* result-data/
-      
+          
           git add result-data
           if ! git diff --cached --exit-code --quiet; then
             git commit -m "Update monitor results $(date +'%Y-%m-%d %H:%M:%S')"
@@ -74,6 +77,7 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
 
 
   deploy:
